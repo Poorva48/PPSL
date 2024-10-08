@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+//Function to swap the values using call by references
+void swap(int&a,int&b)
+{
+  int temp=a; //store the value of 'a' in temporary variable
+  a=b;//Assign the value of 'b' to 'a'
+  b=temp;//Assign the value valus of 'temp' (original 'a') to b
+}
+
+int main(){
+  int x,y;
+  //Input two values from the user
+  cout<<"Enter the value of x: "<<endl;
+  cin>>x;
+  cout<<"Enter the value of y: "<<endl;
+  cin>>y;
+  //Display the value before swapping
+  cout<<"\nBefore swapping:\n";
+  cout<<"x="<<x<<" y="<<y<<endl;
+  //call the swap Function
+  swap(x,y);
+  //Display the value after swapping
+  cout<<"\nAfter swapping:\n";
+   cout<<"x="<<x<<" y="<<y<<endl;
+   return 0;
+  
+  
+}
