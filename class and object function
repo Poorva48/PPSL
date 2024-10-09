@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class student{
+  private:
+  string name;
+  int rollNumber;
+  float marks;
+  
+  public:
+  //Method to input student details
+  void inputDetails (){
+    cout<<"Enter student's name:";
+    cin>>name;  //Single word input for name
+    cout<<"Enter roll numbr:";
+    cin>>rollNumber;
+    cout<<"Enter marks:";
+    cin>>marks;
+  }
+  //Method to display student details
+  void displayDetails (){
+    cout<<"\nStudent details:\n";
+    cout<<"Name:"<<name<<endl;
+    cout<<"Roll number:"<<rollNumber<<endl;
+    cout<<"Marks:"<<marks<<endl;
+  }
+};
+int main(){
+  student student1,student2;
+  
+  //Input details for the first student
+  cout<<"Enter details for the first student:\n";
+  student1.inputDetails();
+  //Input details for the second student
+  cout<<"Enter details for the second student:\n";
+  student2.inputDetails();
+return 0;
+
+}
